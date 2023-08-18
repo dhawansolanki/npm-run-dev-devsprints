@@ -97,7 +97,7 @@ app.get('/profile/:username', (req, res) => {
     const setsOfData = [
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "profileImage": "http://localhost:3000/images/set1/post1.jpg",
         "text": "Enjoying a beautiful day at the beach!",
         "likes": 123,
         "comments": [
@@ -108,60 +108,60 @@ app.get('/profile/:username', (req, res) => {
       },
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
-        "text": "Enjoying a beautiful day at the beach!",
+        "profileImage": "http://localhost:3000/images/set1/post2.jpg",
+        "text": "Recycling gadgets!",
         "likes": 123,
         "comments": [
-          "Looks amazing!",
+          "Good work!",
           "Wish I was there!",
           "Great photo!"
         ]
       },
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "profileImage": "http://localhost:3000/images/set1/post3.jpg",
         "text": "Enjoying a beautiful day at the beach!",
         "likes": 123,
         "comments": [
-          "Looks amazing!",
+          "Good work!!",
           "Wish I was there!",
           "Great photo!"
         ]
       },
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "profileImage": "http://localhost:3000/images/set1/post4.jpg",
         "text": "Enjoying a beautiful day at the beach!",
         "likes": 123,
         "comments": [
           "Looks amazing!",
-          "Wish I was there!",
+          "Good work!",
           "Great photo!"
         ]
       },
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "profileImage": "http://localhost:3000/images/set1/post5.jpg",
         "text": "Enjoying a beautiful day at the beach!",
         "likes": 123,
         "comments": [
           "Looks amazing!",
-          "Wish I was there!",
+          "Good work!",
           "Great photo!"
         ]
       },
       {
         "setNumber": 1,
-        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "profileImage": "http://localhost:3000/images/set1/post6.jpg",
         "text": "Enjoying a beautiful day at the beach!",
         "likes": 123,
         "comments": [
           "Looks amazing!",
-          "Wish I was there!",
+          "Good work!",
           "Great photo!"
         ]
       },
-      // ... (repeat for the remaining sets)
+
     ];
 
     res.json(setsOfData);
