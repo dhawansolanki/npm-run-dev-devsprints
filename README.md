@@ -5,9 +5,15 @@ Our project is a platform that showcases recycled products with their reuse hist
 
 #Installation 
 
-Git clone 
-change directory 
-npm i 
+git clone 
+For Frontend : (3000)
+cd client
+npm i --legacy-peer-deps
+npm start 
+
+For Frontend : (8080)
+cd server
+npm i --legacy-peer-deps
 npm start 
 
 #Technologies
