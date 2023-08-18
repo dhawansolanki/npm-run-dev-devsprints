@@ -104,7 +104,7 @@ const Sidebar = () => {
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="./login" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
                </svg>
@@ -261,37 +261,37 @@ const Sidebar = () => {
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team1.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Dhawan Solanki</h2>
-                  <h3 class="text-gray-500 mb-3">Full-Stack Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/201x201" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team2.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Vasu Gupta</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team3.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Nikhil Sharma</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team4.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Vyom Goyal</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
@@ -303,79 +303,79 @@ const Sidebar = () => {
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <svg xmlns="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
-              <span class="ml-3 text-xl">Tailblocks</span>
+              <span class="ml-3 text-xl">SDGs</span>
             </a>
-            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+            <p class="mt-2 text-sm text-gray-500">The 17 Sustainable Development Goals</p>
           </div>
           <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">No Poverty</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Zero Hunger</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Quality Education</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Gender Equality</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Clean Water and Sanitation</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Affordable and Clean Energy</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Decent Work and Economic Growth</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Industry, Innovation, and Infrastructure</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Reduced Inequality</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Sustainable Cities and Communities</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Responsible Consumption and Production</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Climate Action</a>
                 </li>
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Life Below Water</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Life on Land</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Peace and Justice Strong Institutions</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a class="text-gray-600 hover:text-gray-800">Partnerships to achieve the Goal</a>
                 </li>
               </nav>
             </div>
@@ -383,8 +383,8 @@ const Sidebar = () => {
         </div>
         <div class="bg-gray-100">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+            <p class="text-gray-500 text-sm text-center sm:text-left">
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank"> </a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <a class="text-gray-500">

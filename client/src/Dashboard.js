@@ -13,6 +13,7 @@ const DashboardPage = () => {
       <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#Recycled</p>
     </div>
     <img class="w-full cursor-pointer" src="./plastic2.jpeg" alt="" />
+
     <div class="flex p-4 justify-between">
       <div class="flex items-center space-x-2">
         <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
