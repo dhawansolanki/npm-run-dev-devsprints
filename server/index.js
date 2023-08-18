@@ -89,6 +89,87 @@ app.post('/login', async (req, res) => {
   }
 });
 
+app.get('/profile/:username', (req, res) => {
+  try {
+    const username = req.params.username;
+
+    // Example JSON dummy data for six sets
+    const setsOfData = [
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      {
+        "setNumber": 1,
+        "profileImage": "https://example.com/images/set1/profile.jpg",
+        "text": "Enjoying a beautiful day at the beach!",
+        "likes": 123,
+        "comments": [
+          "Looks amazing!",
+          "Wish I was there!",
+          "Great photo!"
+        ]
+      },
+      // ... (repeat for the remaining sets)
+    ];
+
+    res.json(setsOfData);
+  } catch (error) {
+    res.status(500).json({ error: 'An error occurred while fetching profile data.' });
+  }
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);

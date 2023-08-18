@@ -1,7 +1,16 @@
 import React from 'react'
 import DashboardFooter from './DashboardFooter'
+import axios from 'axios'
 
 const ProfilePage=()=> {
+    
+axios.get("http://localhost:8080/profile/dhawansolanki")
+.then(response => {
+  console.log(response.data); 
+})
+.catch(error => {
+  console.error(error);
+});
   return (
     <div>
         <div class="max-w-2xl mx-auto">
@@ -9,25 +18,25 @@ const ProfilePage=()=> {
 <div class="px-3 py-2">
   
     <div class="flex flex-col gap-1 text-center">
-        <a class="block mx-auto bg-center bg-no-repeat bg-cover w-20 h-20 rounded-full border border-gray-400 shadow-lg" href="" style={{"background-image": "url('https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg')"}}></a>
-        <p class="font-serif font-semibold">Marina Davinchi</p>
-        <span class="text-sm text-gray-400">New York, NY - Los Angeles, CA</span>
-        <span class="text-sm text-gray-400">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span>
+        <a class="block mx-auto bg-center bg-no-repeat bg-cover w-20 h-20 rounded-full border border-gray-400 shadow-lg" href="" style={{"background-image": "url('./team1.jpeg')"}}></a>
+        <p class="font-serif font-semibold">Dhawan Solanki</p>
+        <span class="text-sm text-gray-400">BMSCE - Bangalore, India</span>
+        {/* <span class="text-sm text-gray-400">https://www.youtube.com/watch?v=dQw4w9WgXcQ</span> */}
     </div>
 
 
 
     <div class="flex justify-center items-center gap-2 my-3">
         <div class="font-semibold text-center mx-4">
-            <p class="text-black">102</p>
+            <p class="text-black">6</p>
             <span class="text-gray-400">Posts</span>
         </div>
         <div class="font-semibold text-center mx-4">
-            <p class="text-black">102</p>
+            <p class="text-black">0</p>
             <span class="text-gray-400">Followers</span>
         </div>
         <div class="font-semibold text-center mx-4">
-            <p class="text-black">102</p>
+            <p class="text-black">3</p>
             <span class="text-gray-400">Folowing</span>
         </div>
     </div>

@@ -261,37 +261,37 @@ const Sidebar = () => {
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team1.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Dhawan Solanki</h2>
-                  <h3 class="text-gray-500 mb-3">Full-Stack Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/201x201" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team2.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Vasu Gupta</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team3.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Nikhil Sharma</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
             <div class="p-4 lg:w-1/4 md:w-1/2">
               <div class="h-full flex flex-col items-center text-center">
-                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203" />
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="./team4.jpeg" />
                 <div class="w-full">
                   <h2 class="title-font font-medium text-lg text-gray-900">Vyom Goyal</h2>
-                  <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                  <h3 class="text-gray-500 mb-3">Software Developer</h3>
                 </div>
               </div>
             </div>
