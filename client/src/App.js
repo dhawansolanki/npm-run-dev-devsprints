@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from './login';
+import Chat from './chat';
 
 function App() {
   <>
@@ -10,7 +11,9 @@ function App() {
     <Routes>
   
     <Route path="/login" element={<LoginPage/> } />
-    {/* <Route path="*" element={<Error404/>} /> */}
+    
+    <Route path="/chat" element={<Chat/> } />
+    
     </Routes>
     </BrowserRouter>
     
