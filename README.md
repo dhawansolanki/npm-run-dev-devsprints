@@ -1,28 +1,36 @@
-# npm-run-dev-devsprints
+# Project: npm-run-dev-devsprints
+
+Welcome to **npm-run-dev-devsprints**! Our platform aims to promote sustainable practices by showcasing recycled products, their reuse history, carbon footprint details, and nearby recyclable shops, empowering users to make eco-conscious consumer choices.
+
+## Installation
+
+Follow these steps to set up the project:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
 
 
-Our project is a platform that showcases recycled products with their reuse history, carbon footprint information, and nearby recyclable shops, encouraging eco-conscious consumer choices.
+For Frontend (Port: 3000):
 
-#Installation 
-
-git clone 
-For Frontend : (3000)
 cd client
-npm i --legacy-peer-deps
-npm start 
+npm install --legacy-peer-deps
+npm start
 
-For Frontend : (8080)
+
+For Backend (Port: 8080):
+
 cd server
-npm i --legacy-peer-deps
-npm start 
+npm install --legacy-peer-deps
+npm start
 
-#Technologies
-ReactJS 
+
+Technologies
+Our project utilizes the following technologies:
+
+ReactJS
 NodeJS
 MongoDB
 AWS
-Tailwind
+Tailwind CSS
 Flow Bite React
-
-#How to use our project 
-Share Post of the recycling of your waste and contribute towards the environment by decreasing the carbon emission and flaunt your recyclable products with your friends,family .
