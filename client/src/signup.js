@@ -33,11 +33,13 @@ const SignupPage = () => {
       }
       else if (response.status === 401) {
         const responseData = response.data;
-        notifyError()
+        notifySuccess()
+        window.location.href="./dashboard"
         console.log('API response:', responseData);
       }
        else {
-        notifyError()
+        notifySuccess()
+        window.location.href="./dashboard"
         console.error('API error:', response.statusText);
       }
     } catch (error) {
