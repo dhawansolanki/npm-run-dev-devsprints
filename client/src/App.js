@@ -2,9 +2,10 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from './login';
 import Chat from './chat';
-import Signup from './signup';
+import SignupPage from './signup';
 import "./App.css"
 import LandingPage from './landing';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
         <Routes>
           <Route path="" element={<LandingPage /> } />
           <Route path="login" element={<LoginPage />} />
-           <Route path="/signup" element={<Signup/> } />
+           <Route path="/signup" element={<SignupPage/> } />
              <Route path="/chat" element={<Chat/> } />
           {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </>
   );
 }
