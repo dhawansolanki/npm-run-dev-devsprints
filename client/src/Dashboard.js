@@ -8,11 +8,12 @@ const DashboardPage = () => {
 <div class="min-h-screen bg-gray-100 flex justify-center items-center">
   <div class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
     <div>
-      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Home</span>
-      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Lampara Look</h1>
-      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#by Saca Tuerca</p>
+      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Recycled</span>
+      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Plant Stand</h1>
+      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#Recycled</p>
     </div>
-    <img class="w-full cursor-pointer" src="./profileimage1.avif" alt="" />
+    <img class="w-full cursor-pointer" src="./plastic2.jpeg" alt="" />
+
     <div class="flex p-4 justify-between">
       <div class="flex items-center space-x-2">
         <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
@@ -45,15 +46,15 @@ const DashboardPage = () => {
 <div class="min-h-screen bg-gray-100 flex justify-center items-center">
   <div class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
     <div>
-      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Home</span>
-      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Lampara Look</h1>
-      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#by Saca Tuerca</p>
+      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Recycle</span>
+      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Plantstand</h1>
+      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#Recycled</p>
     </div>
-    <img class="w-full cursor-pointer" src="./profileimage2.avif" alt="" />
+    <img class="w-full cursor-pointer" src="./recycledplant.jpg" alt="" />
     <div class="flex p-4 justify-between">
       <div class="flex items-center space-x-2">
         <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
-        <h2 class="text-gray-800 font-bold cursor-pointer">Felipe Sacudon</h2>
+        <h2 class="text-gray-800 font-bold cursor-pointer"></h2>
       </div>
       <div class="flex space-x-2">
         <div class="flex space-x-1 items-center">
@@ -84,11 +85,11 @@ const DashboardPage = () => {
 <div class="min-h-screen bg-gray-100 flex justify-center items-center">
   <div class="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
     <div>
-      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Home</span>
-      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Lampara Look</h1>
-      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#by Saca Tuerca</p>
+      <span class="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">Recycled</span>
+      <h1 class="text-2xl mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Dustbin</h1>
+      <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#Recycled</p>
     </div>
-    <img class="w-full cursor-pointer" src="./profileimage3.avif" alt="" />
+    <img class="w-full cursor-pointer" src="./downloadplastic.jpeg" alt="" />
     <div class="flex p-4 justify-between">
       <div class="flex items-center space-x-2">
         <img class="w-10 rounded-full" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" alt="sara" />
