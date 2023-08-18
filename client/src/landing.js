@@ -9,33 +9,25 @@ const LandingPage=() => {
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <span class="ml-3 text-xl">Tailblocks</span>
+        <span class="ml-3 text-xl">npm run dev</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <a class="mr-5 hover:text-gray-900">First Link</a>
         <a class="mr-5 hover:text-gray-900">Second Link</a>
-        <a class="mr-5 hover:text-gray-900">Third Link</a>
-        <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+ 
       </nav>
-      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
+
     </div>
   </header>
 
   <section class="text-gray-600 body-font">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-          <br class="hidden lg:inline-block"/>readymade gluten
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          <br class="hidden lg:inline-block"/>GO GREEN
         </h1>
-        <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-        <div class="flex justify-center">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-        </div>
+        <p class="mb-8 leading-relaxed">At Our Project, we are dedicated to driving positive change and fostering sustainable development for a better world. Our project is committed to offering innovative solutions that align with the United Nations' Sustainable Development Goals (SDGs), paving the way for a more harmonious and prosperous future..</p>
+
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
         <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
@@ -87,8 +79,8 @@ const LandingPage=() => {
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Shooting Stars</h2>
-            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Innovative Solutions</h2>
+            <p class="leading-relaxed"> We believe in the power of innovation to transform problems into opportunities. Our team of experts works tirelessly to develop cutting-edge solutions that tackle complex challenges head-on.</p>
           </div>
         </div>
       </div>
@@ -104,8 +96,8 @@ const LandingPage=() => {
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The Catalyzer</h2>
-            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Collaboration</h2>
+            <p class="leading-relaxed">We understand that sustainable development requires collective effort. We actively engage with stakeholders, partners, and communities to foster collaboration and co-create impactful initiatives.</p>
           </div>
         </div>
       </div>
@@ -122,8 +114,8 @@ const LandingPage=() => {
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The 400 Blows</h2>
-            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Education and Awareness</h2>
+            <p class="leading-relaxed">Knowledge is the first step toward change. Through educational programs and awareness campaigns, we empower individuals and organizations to make informed decisions that benefit both society and the environment.</p>
           </div>
         </div>
       </div>
@@ -140,8 +132,8 @@ const LandingPage=() => {
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Neptune</h2>
-            <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+            <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Empowerment</h2>
+            <p class="leading-relaxed">Our projects are designed to empower communities, especially those that are marginalized or underserved. By providing access to resources and tools, we strive to create opportunities for sustainable growth.</p>
           </div>
         </div>
       </div>
