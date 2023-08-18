@@ -1,8 +1,22 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginPage from './login';
+
 function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+  <>
+
+    
+    <BrowserRouter>
+    <Routes>
+  
+    <Route path="/login" element={<LoginPage/> } />
+    {/* <Route path="*" element={<Error404/>} /> */}
+    </Routes>
+    </BrowserRouter>
+    
+    </>
+    
+
 }
 
 export default App;
