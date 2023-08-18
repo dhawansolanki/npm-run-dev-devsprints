@@ -8,7 +8,7 @@ Follow these steps to set up the project:
 
 1. Clone the repository:
    ```bash
-   git clone [<repository_url>](https://github.com/dhawansolanki/npm-run-dev-devsprints.git)
+   git clone https://github.com/dhawansolanki/npm-run-dev-devsprints.git
 
 
 For Frontend (Port: 3000):
@@ -34,3 +34,4 @@ MongoDB
 AWS
 Tailwind CSS
 Flow Bite React
+
