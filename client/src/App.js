@@ -4,12 +4,14 @@ import LoginPage from './login';
 import Chat from './chat';
 import Signup from './signup';
 import "./App.css"
+import LandingPage from './landing';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="" element={<LandingPage /> } />
           <Route path="login" element={<LoginPage />} />
            <Route path="/signup" element={<Signup/> } />
              <Route path="/chat" element={<Chat/> } />
