@@ -28,6 +28,7 @@ const SignupPage = () => {
       if (response.status === 200) {
         const responseData = response.data;
         notifySuccess()
+        window.location.href="./dashboard"
         console.log('API response:', responseData);
       }
       else if (response.status === 401) {
