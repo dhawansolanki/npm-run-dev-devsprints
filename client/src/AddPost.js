@@ -189,8 +189,8 @@ const AddPost = () => {
                   alt=""
                 />
                 <div className="flex flex-col">
-                  <p className="font-semibold text-gray-800">Xu Lin Bashir</p>
-                  <p className="text-gray-400">table.co</p>
+                  <p className="font-semibold text-gray-800">Eco Friendly Bot</p>
+                  <p className="text-gray-400">Team npm run dev</p>
                 </div>
               </div>
               <h1 className="font-semibold text-red-400">Remove</h1>
