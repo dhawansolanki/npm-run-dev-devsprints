@@ -7,6 +7,7 @@ import "./App.css"
 import LandingPage from './landing';
 import { ToastContainer } from 'react-toastify';
 import ProfilePage from './Profile';
+import AddPost from './AddPost';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
            <Route path="/signup" element={<SignupPage /> } />
              <Route path="/dashboard" element={<DashboardPage /> } />
              <Route path="/profile" element={<ProfilePage /> } />
+             <Route path="/addpost" element={<AddPost /> } />
           {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </BrowserRouter>
