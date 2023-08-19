@@ -9,7 +9,7 @@ const MapPage = () => {
 
   useEffect(() => {
     // Fetch data from SeatGeek API using axios
-    axios.get(`https://api.seatgeek.com/2/events?client_id=8bd02200deb17594372e5c8d6c156cb05493df38fcc5817e503f734ab1ebc389`)
+    axios.get(`https://api.seatgeek.com/2/events?client_id=MzU4MTY1MzV8MTY5MjQzNzM2OS4zODk0NDY3`)
       .then(response => {
         setEvents(response.data.events);
       })
