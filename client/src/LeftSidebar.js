@@ -18,9 +18,9 @@ const LeftSidebar = () => {
   <aside class="sidebar">
     
     <nav class="sidebar__menu">
-      <a href="">Home</a>
-      <a href="">Login</a>
-      <a href="">Signup</a>
+      <a href="./dashboard">Home</a>
+      <a href="./login">Login</a>
+      <a href="./signup">Signup</a>
       <a href="">Team</a>
       <a href="">SDG's</a>
     </nav>
