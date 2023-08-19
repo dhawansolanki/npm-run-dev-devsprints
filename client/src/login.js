@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faWhatsapp, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const LoginPage = () => {
   const notifySuccess = () => toast("Login Successfull!");
@@ -113,13 +114,13 @@ const LoginPage = () => {
         </div>
         <div className="flex flex-row justify-center items-center space-x-3">
           <span className="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg text-white bg-blue-900 hover:shadow-lg cursor-pointer transition ease-in duration-300">
-            <img className="w-4 h-4" src="data:image/svg+xml;base64,..."/>
+          <FontAwesomeIcon icon={faTwitter} style={{ color: 'white', width: '80px',fontSize: '34px' }} />
           </span>
           <span className="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg text-white bg-blue-400 hover:shadow-lg cursor-pointer transition ease-in duration-300">
-            <img className="w-4 h-4" src="data:image/svg+xml;base64,..."/>
+          <FontAwesomeIcon icon={faInstagram} style={{ color: 'white', width: '80px', fontSize: '34px'}} />
           </span>
           <span className="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg text-white bg-blue-500 hover:shadow-lg cursor-pointer transition ease-in duration-300">
-            <img src="data:image/svg+xml;base64,..."/>
+          <FontAwesomeIcon icon={faFacebook} style={{ color: 'white', width: '80px', fontSize: '34px'}} />
           </span>
         </div>
         <div className="flex items-center justify-center space-x-2">
