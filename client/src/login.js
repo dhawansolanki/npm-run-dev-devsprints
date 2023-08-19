@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,6 +10,44 @@ const LoginPage = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [token, setToken] = useState('');
+
+
+ 
+  
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   const requestData = {
+  //     email,
+  //     password,
+  //   };
+
+  //   try {
+  //     const response = await axios.post('http://localhost:8080/login', requestData);
+
+  //     if (response.status === 200) {
+  //       const responseData = response.data;
+  //       notifySuccess()
+  //       window.location.href="./dashboard"
+  //       console.log('API response:', responseData);
+  //     }
+  //     else if (response.status === 401) {
+  //       const responseData = response.data;
+  //       notifyError()
+  //       console.log('API response:', responseData);
+  //     }
+  //      else {
+  //       notifyError()
+  //       console.error('API error:', response.statusText);
+  //     }
+  //   } catch (error) {
+  //     console.error('API request failed:', error);
+  //   }
+  // };
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,24 +61,42 @@ const LoginPage = () => {
       const response = await axios.post('http://localhost:8080/login', requestData);
 
       if (response.status === 200) {
-        const responseData = response.data;
-        notifySuccess()
-        window.location.href="./dashboard"
-        console.log('API response:', responseData);
-      }
-      else if (response.status === 401) {
-        const responseData = response.data;
-        notifyError()
-        console.log('API response:', responseData);
-      }
-       else {
-        notifyError()
+        const { token } = response.data; // Extract the token from the response
+        setToken(token); // Store the token in state
+        notifySuccess();
+      } else if (response.status === 401) {
+        notifyError();
+        console.log('API response:', response.data);
+      } else {
+        notifyError();
         console.error('API error:', response.statusText);
       }
     } catch (error) {
       console.error('API request failed:', error);
     }
   };
+
+
+
+  const handleProtectedRequest = async () => {
+    try {
+      const response = await axios.get('/protected-route', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      console.log('Response:', response.data);
+    } catch (error) {
+      console.error('Request error:', error);
+    }
+  };
+
+  useEffect(() => {
+    if (token) {
+      handleProtectedRequest();
+    }
+  }, [token]);
 
   return (
 
