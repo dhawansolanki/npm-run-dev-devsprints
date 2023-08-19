@@ -12,18 +12,18 @@ Follow these steps to set up the project:
 
 
 For Frontend (Port: 3000):
-
+```
 cd client
 npm install --legacy-peer-deps      or yarn
 npm start
-
+```
 
 For Backend (Port: 8080):
-
+```
 cd server
 npm install --legacy-peer-deps       or yarn
 npm start
-
+```
 #NOTE : 
 if getting error similar to : 
 ERROR in ./node_modules/@fortawesome/react-fontawesome/index.es.js 1:0-64
