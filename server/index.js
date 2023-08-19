@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const app = express();
 const cors = require("cors");
+const jwt = require('jsonwebtoken');
+const { User, Post } = require('./models')
+
 
 let corsOptions = {
   origin: "*",
@@ -77,6 +80,34 @@ app.post('/signup', async (req, res) => {
 });
 
 // Login route
+// app.post('/login', async (req, res) => {
+//   try {
+//     const { email, password } = req.body;
+
+//     // Check if the user exists
+//     const user = await User.findOne({ email });
+//     if (!user) {
+//       return res.status(401).json({ error: 'Invalid Email or Password' });
+//     }
+
+//     // Compare the provided password with the stored password
+//     const isPasswordValid = await bcrypt.compare(password, user.password);
+//     if (!isPasswordValid) {
+//       return res.status(401).json({ error: 'Invalid Email or Password' });
+//     }
+
+//     res.status(200).json({ message: 'Login successful' });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
+
+
+const secretKey = '6-PdfLOH5ghjcp7AbhVTO-Drq7xxrsLNs6oSt95jdpY'
+
+
+// Login route
 app.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -93,12 +124,52 @@ app.post('/login', async (req, res) => {
       return res.status(401).json({ error: 'Invalid Email or Password' });
     }
 
-    res.status(200).json({ message: 'Login successful' });
+    // If the user's credentials are valid, create and send a JWT token
+    ; // Replace with your secret key
+    const token = jwt.sign({ userId: user._id }, secretKey, { expiresIn: '1h' });
+
+    res.status(200).json({ message: 'Login successful', token });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+
+
+
+// Middleware to protect the protected-route
+const authenticateToken = (req, res, next) => {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
+  if (!token) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+
+  jwt.verify(token, secretKey, (err, user) => {
+    if (err) {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    req.user = user;
+    next();
+  });
+};
+
+app.get('/protected-route', authenticateToken, async (req, res) => {
+  try {
+    // Replace this with your actual logic for protected route
+    const posts = await Post.find({ userId: req.user.userId });
+
+    res.status(200).json(posts);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 
 
 app.post('/addpost', async (req, res) => {
