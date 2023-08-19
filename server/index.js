@@ -32,6 +32,17 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
+// Create a schema for the post
+const postSchema = new mongoose.Schema({
+  imageUrl: { type: String, required: true },
+  caption: { type: String, required: true },
+  tags: { type: [String], required: true },
+  location: { type: String },
+  addfriend: { type: Boolean, default: false },
+});
+
+const Post = mongoose.model('Post', postSchema);
+
 app.use(express.json());
 
 // Signup route
@@ -88,6 +99,32 @@ app.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+
+
+app.post('/addpost', async (req, res) => {
+  try {
+    const { imageUrl, caption, tags, location, addfriend } = req.body;
+
+    // Create a new post
+    const newPost = new Post({
+      imageUrl,
+      caption,
+      tags,
+      location,
+      addfriend
+    });
+
+    // Save the post to the database
+    await newPost.save();
+
+    res.status(201).json({ message: 'Post added successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 
 app.get('/profile/:username', (req, res) => {
   try {
