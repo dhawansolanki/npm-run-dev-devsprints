@@ -34,6 +34,7 @@ const User = mongoose.model('User', userSchema);
 
 // Create a schema for the post
 const postSchema = new mongoose.Schema({
+  author_name: { type: String, required: true },
   imageUrl: { type: String, required: true },
   caption: { type: String, required: true },
   tags: { type: [String], required: true },
@@ -103,10 +104,11 @@ app.post('/login', async (req, res) => {
 
 app.post('/addpost', async (req, res) => {
   try {
-    const { imageUrl, caption, tags, location, addfriend } = req.body;
+    const { author_name, imageUrl, caption, tags, location, addfriend } = req.body;
 
     // Create a new post
     const newPost = new Post({
+      author_name,
       imageUrl,
       caption,
       tags,
@@ -204,6 +206,18 @@ app.get('/profile/:username', (req, res) => {
     res.json(setsOfData);
   } catch (error) {
     res.status(500).json({ error: 'An error occurred while fetching profile data.' });
+  }
+});
+
+// Define route to fetch posts that match specific criteria
+app.get('/api/posts', async (req, res) => {
+  const criteria = req.query;
+
+  try {
+    const posts = await Post.find(criteria);
+    res.json(posts);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching posts' });
   }
 });
 

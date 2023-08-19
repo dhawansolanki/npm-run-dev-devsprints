@@ -53,6 +53,7 @@ const AddPost = () => {
       const s3Response = await uploadImageToS3(formData.imageFile);
 
       const dataToSend = {
+        author_name:"Dhawan Solanki",
         imageUrl: s3Response.imageUrl,
         caption: formData.caption,
         tags: formData.tags,
@@ -62,8 +63,10 @@ const AddPost = () => {
 
       const response = await axios.post('http://localhost:8080/addpost', dataToSend);
       console.log('API response:', response.data);
+      window.location.href='./dashboard'
     } catch (error) {
       console.error('API error:', error);
+      window.location.href='./'
     }
   };
 
