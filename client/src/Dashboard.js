@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DashboardFooter from './DashboardFooter';
-
+import "./Dashboard.css"
 const DashboardPage = () => {
   const [posts, setPosts] = useState([]);
 
@@ -12,9 +12,9 @@ const DashboardPage = () => {
   }, []);
 
     return (
-       <div className="flex flex-col h-screen bg-black border-4 border-gray-900">
+       <div className="flex flex-col h-screen  border-4 border-gray-900 custombg" >
       {posts.map(post => (
-        <div key={post._id} className="min-h-screen bg-gray-100 flex justify-center items-center">
+        <div key={post._id} className="min-h-screen bg-gray-100 flex justify-center items-center custombg">
           <div className="max-w-xs container bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
             <div>
               <span className="text-white text-xs font-bold rounded-lg bg-green-500 inline-block mt-4 ml-4 py-1.5 px-4 cursor-pointer">{post.tags}</span>

@@ -8,6 +8,7 @@ import LandingPage from './landing';
 import { ToastContainer } from 'react-toastify';
 import ProfilePage from './Profile';
 import AddPost from './AddPost';
+import MapPage from './Map';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
              <Route path="/dashboard" element={<DashboardPage /> } />
              <Route path="/profile" element={<ProfilePage /> } />
              <Route path="/addpost" element={<AddPost /> } />
+             <Route path="/discover" element={<MapPage /> } />
           {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </BrowserRouter>
