@@ -6,7 +6,7 @@ Welcome to **npm-run-dev-devsprints**! Our platform aims to promote sustainable 
 
 Follow these steps to set up the project:
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/dhawansolanki/npm-run-dev-devsprints.git
 
